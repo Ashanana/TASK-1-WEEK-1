@@ -1,0 +1,27 @@
+#nameError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #nameError.visible {
+    display: block;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }
+
+  input
+{
+display: block;
+margin: 5px 0px;
+}
+:required
+{
+border: 1px solid #FF305D;    
+}
+:optional
+{
+border: 1px solid #3075FF;    
+}
+
