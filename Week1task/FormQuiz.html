@@ -14,13 +14,15 @@
 4. Error message when entering the wrong format of email ID.
 5. Display a success message on successful submission
 
-
-Please i will submit before 10PM today 14th March 2023!. 
-I had Laptop issue.!
 -->
 
 
 <h2>Fill the form Bio-data</h2><br>
+
+
+<!-- Question 1,2,3-->
+
+
 <form action="*" method="*">
     <fieldset>
             <legend>S-H WEEK 1 TASK !</legend>
@@ -41,13 +43,66 @@ I had Laptop issue.!
                 
             <input type="button" value="Submit"><br><br>
             <input type="submit" value="Submit to Win" /><br><br>
-            
+         
 
 
                     
     </fieldset>
 
 </form>
+
+<br><br><br>
+
+
+<!-- Question 4-->
+
+<form action="">
+    <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
+    <input type="submit" value="Submit">               
+</form>
+<br>
+
+<!-- Question 5-->
+
+<br><br>
+
+
+
+
+
+<br><br><br><br><br>
+
+<div>if (isset($success)) {
+
+    echo "Message successfully sent";
+    }
+    else {
+    
+    echo  "Message Sending Failed, try again";
+    } 
+</div>
+    
+<form method="post" action="" id="contactForm">
+    <div>
+    <label for="fullName">Name: </label>
+    <input type="text" name="fullName" id="fullName" required="required" />
+    </div>
+                    
+    <div>
+    <label for="Email">Email address:</label>
+    <input type="email" name="email" id="email" required="required" placeholder="name@example.com" />
+    </div>
+                
+    <div>
+    <label for="message">Idea / Question / Comments:</label>
+    <textarea name="message" id="message" rows="5" cols="20"></textarea>
+    </div>
+                
+    <div class="submit">
+    <input type="submit" name="contactSubmit" id="contactSubmit" value="Send Message" />
+    </div>
+ </form>
+
 
 
 </body>
